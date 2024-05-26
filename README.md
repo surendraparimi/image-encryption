@@ -1,7 +1,3 @@
-# image-encryption
-from cryptography.fernet import Fernet
-from PIL import Image
-
 # Generate a key for encryption
 def generate_key():
     return Fernet.generate_key()
@@ -33,7 +29,3 @@ def decrypt_image(encrypted_image_path, key):
         f.write(decrypted_data)
     
     print("Image decrypted successfully.")
-
-# Example usage
-if __name__ == "__main__":
-    # Generate a key for encryption
